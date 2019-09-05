@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sweet Spoon-survey form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 id="title">Survey Form</h1>
+	<p id="description">
+		Please fill out the survey form for our ice cream shop
+	</p>
+	<form id="survey-form">
+		<div class="form-element">
+			<label for="name" id="name-label">Name: 
+				<input type="text" id="name" placeholder="Enter your name" required>
+			</label>
+		</div>
+		<div class="form-element">
+		<label for="email" id="email-label">Email: 
+			<input type="email" id="email" placeholder="Enter your email" required>
+		</label>
+	</div>
+	<div class="form-element">
+		<label for="number" id="number-label">How much would you rate us between 1 to 10?
+			<input type="number" id="number" placeholder="Rate" min="1" max="10">
+		</label>
+	</div>
+	<div class="form-element">
+		<label>How frequently do you consume ice-cream?
+			<select id="dropdown">
+				<option>Daily</option>
+				<option>More than once a week</option>
+				<option>Once a week</option>
+				<option>Once every two week</option>
+				<option>Once a month</option>
+				<option>Les than once a month</option>
+			</select>
+		</label>
+	</div>
+	<div class="form-element">
+	<label>Would you recommend us to others?
+		<input type="radio" name="recommend" value="yes">Yes
+		<input type="radio" name="recommend" value="no">No
+	</label>
+</div>
+<div class="form-element">
+		<label>Select your favourite ice-cream flavours
+			<input type="checkbox" name="flavour" value="cookies-and-cream">Cookies & cream
+			<input type="checkbox" name="flavour" value="butterscotch">Butterscotch
+			<input type="checkbox" name="flavour" value="chocolate">Chocolate
+			<input type="checkbox" name="flavour" value="vanilla">Vanilla
+			<input type="checkbox" name="flavour" value="strawberry">Strawberry
+		</label>
+	</div>
+	<div class="form-element">
+			<label>Any Comments or Suggestions?
+				<textarea placeholder="Enter your comments here..."></textarea>
+			</label>
+		</div>
+			<button id="submit">Submit</button>
+		</form>
+		<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+	</body>
+	</html>
